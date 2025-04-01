@@ -14,7 +14,6 @@ include_directories(${SQLITE3_INCLUDE_DIRS})
 # Source files
 set(SOURCES
     src/main.cpp
-    src/menu.cpp
     src/database.cpp
 )
 
@@ -23,4 +22,4 @@ add_executable(bible_viewer ${SOURCES})
 
 # Link libraries
 target_link_libraries(bible_viewer ${CURSES_LIBRARIES} ${SQLITE3_LIBRARIES})
-target_link_libraries(bible_viewer ncurses sqlite3)
+target_link_libraries(bible_viewer menu ncurses sqlite3)
