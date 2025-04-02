@@ -15,6 +15,7 @@ include_directories(${SQLITE3_INCLUDE_DIRS})
 set(SOURCES
     src/main.cpp
     src/database.cpp
+    src/utils.cpp
 )
 
 # Add executable

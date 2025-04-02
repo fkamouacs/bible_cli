@@ -19,6 +19,8 @@ public:
 
     std::vector<std::string> get_old_testament_books();
 
+    std::vector<std::string> get_new_testament_books();
+
     int get_book_id_by_name(std::string &bookName);
 
     // Destructor: Close the database connection
